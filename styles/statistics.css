@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+
+#CommitsText {
+    background: linear-gradient(0deg, #FF0000, #FF00C7);
+    font-size: 67px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#StarsText {
+    background: linear-gradient(0deg, #FFA800, #FAFF00);
+    font-size: 67px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#StreakText {
+    background: linear-gradient(0deg, #FF5C00, #FF9900);
+    font-size: 67px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#PRText {
+    background: linear-gradient(180deg, #00FF47 0%, #00FFF0 100%);
+    font-size: 67px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#IssuesText {
+    background:  linear-gradient(180deg, #00FFE0 0%, #0066FF 100%);
+    font-size: 67px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.IHaveMadeCommitsInTheLastYear {
+    left: 0px;
+    top: 19px;
+    position: absolute;
+    color: white;
+    font-size: 64px;
+    font-family: Inter;
+    font-weight: 800;
+    white-space: nowrap; /* Ensures the text stays on one line */
+  }
+  

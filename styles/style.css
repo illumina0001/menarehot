@@ -70,6 +70,45 @@ body {
     color: black;
 }
 
+#twitter {
+    color: white; 
+    font-size: 24px; 
+    margin: 0 10px;
+    transition: all 0.25s ease;
+}
+
+#twitter:hover {
+    color: rgb(0, 195, 255);
+    font-size: 26px;
+    transition: all 0.25s ease;
+}
+
+#github {
+    color: white; 
+    font-size: 24px; 
+    margin: 0 10px;
+    transition: all 0.25s ease;
+}
+
+#github:hover {
+    color: black;
+    font-size: 26px;
+    transition: all 0.25 ease;
+}
+
+#discord {
+    color: white; 
+    font-size: 24px; 
+    margin: 0 10px;
+    transition: all 0.25s ease;
+}
+
+#discord:hover {
+    color: #7289DA;
+    font-size: 26px;
+    transition: all 0.25 ease;
+}
+
 @media (max-width: 768px) {
     .Languages img {
         max-width: 10vw;

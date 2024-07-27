@@ -3,6 +3,42 @@ body {
     margin: 0
 }
 
+* {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+
 .ContributionsPage {
     width: 100%;
+}
+
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1vw;
+    z-index: 1000;
+}
+
+.topbar-button {
+    background-color: transparent;
+    color: white;
+    padding: 1vh 1vw;
+    text-decoration: none;
+    font-size: 1.5vw;
+    cursor: pointer;
+    transition: all 0.3s, color 0.3s;
+}
+
+.topbar-button:hover {
+    background-color: white;
+    color: black;
 }

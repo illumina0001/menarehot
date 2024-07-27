@@ -7,7 +7,7 @@ All designs are imported from Figma! This is my first experience, and I definite
 
 # Pages
 ### Home page
-The home page shows basic information
+The home page shows basic information about me
 - Who I am
 - How long I've been programming
 - Which languages I've done

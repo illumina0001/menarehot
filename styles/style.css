@@ -72,40 +72,40 @@ body {
 
 #twitter {
     color: white; 
-    font-size: 24px; 
+    font-size: 40px; 
     margin: 0 10px;
     transition: all 0.25s ease;
 }
 
 #twitter:hover {
     color: rgb(0, 195, 255);
-    font-size: 26px;
+    font-size: 44px;
     transition: all 0.25s ease;
 }
 
 #github {
     color: white; 
-    font-size: 24px; 
+    font-size: 40px; 
     margin: 0 10px;
     transition: all 0.25s ease;
 }
 
 #github:hover {
     color: black;
-    font-size: 26px;
+    font-size: 44px;
     transition: all 0.25 ease;
 }
 
 #discord {
     color: white; 
-    font-size: 24px; 
+    font-size: 40px; 
     margin: 0 10px;
     transition: all 0.25s ease;
 }
 
 #discord:hover {
     color: #7289DA;
-    font-size: 26px;
+    font-size: 44px;
     transition: all 0.25 ease;
 }
 

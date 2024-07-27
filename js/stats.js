@@ -1,4 +1,4 @@
-const token = "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"
+const token = "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"
 const username = '29cmb';
 
 setInterval(() => {
@@ -24,7 +24,7 @@ function getStreak() {
         const dateString = date.toISOString().split('T')[0];
         return fetch(`https://api.github.com/search/commits?q=author:${username}+committer-date:${dateString}`, {
             headers: {
-                'Authorization': `token ${token}`,
+                "Authorization": `token ${token}`,
                 'Accept': 'application/vnd.github.cloak-preview'
             }
         })
@@ -54,9 +54,7 @@ function getStreak() {
 }
 
 function getStars() {
-    fetch(`https://api.github.com/users/${username}/repos`, {
-        headers: { 'Authorization': `token ${token}` }
-    })
+    fetch(`https://api.github.com/users/${username}/repos`)
     .then(response => response.json())
     .then(data => {
         const totalStars = data.reduce((sum, repo) => sum + repo.stargazers_count, 0);
@@ -67,9 +65,7 @@ function getStars() {
 }
 
 function getIssues() {
-    fetch(`https://api.github.com/search/issues?q=author:${username}+type:issue`, {
-        headers: { 'Authorization': `token ${token}` }
-    })
+    fetch(`https://api.github.com/search/issues?q=author:${username}+type:issue`)
     .then(response => response.json())
     .then(data => {
         console.log(`Total issues: ${data.total_count}`);
@@ -85,7 +81,6 @@ function getCommits() {
     
     fetch(`https://api.github.com/search/commits?q=author:${username}+committer-date:>${since}`, {
         headers: {
-            'Authorization': `token ${token}`,
             'Accept': 'application/vnd.github.cloak-preview'
         }
     })
@@ -98,9 +93,7 @@ function getCommits() {
 }
 
 function getPrs() {
-    fetch(`https://api.github.com/search/issues?q=author:${username}+type:pr`, {
-        headers: { 'Authorization': `token ${token}` }
-    })
+    fetch(`https://api.github.com/search/issues?q=author:${username}+type:pr`)
     .then(response => response.json())
     .then(data => {
         console.log(`Total PRs: ${data.total_count}`);

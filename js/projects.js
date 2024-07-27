@@ -17,7 +17,8 @@ const projects = [
     {
         name: "FFlag API",
         description: "I made a Fast Flag API that allows featurs to be asynchronously toggled without requiring servers to be put into maintenance or restarted. Very useful for developers.",
-        image: "Images/Flag.png"
+        image: "Images/Flag.png",
+        redirect: "https://github.com/29cmb/FFlagAPI"
     },
     {
         name: "Platinum Minigames",

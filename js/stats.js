@@ -1,4 +1,3 @@
-const token = "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"
 const username = '29cmb';
 
 setInterval(() => {
@@ -24,7 +23,6 @@ function getStreak() {
         const dateString = date.toISOString().split('T')[0];
         return fetch(`https://api.github.com/search/commits?q=author:${username}+committer-date:${dateString}`, {
             headers: {
-                "Authorization": `token ${token}`,
                 'Accept': 'application/vnd.github.cloak-preview'
             }
         })

@@ -60,7 +60,7 @@ body {
     font-size: 64px;
     font-family: Inter;
     font-weight: 800;
-    white-space: nowrap; /* Ensures the text stays on one line */
+    white-space: nowrap;
   }
   
 .topbar {

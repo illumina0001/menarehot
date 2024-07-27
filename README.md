@@ -1,6 +1,6 @@
 ![Hi! I'm DevCmb](Images/Hi.png)
----
-# Personal Website
+
+# DevCmb Personal Website
 This is my personal website where I show contributions, stats, and a bit about myself
 
 All designs are imported from Figma! This is my first experience, and I definitely give it a 10/10 for how beginner friendly it is. Code is messy because of this, I don't pay for dev mode so I use a plugin for exporting. All files can be found in [the Designs directory](./Designs/)
@@ -22,6 +22,12 @@ Wow the only one that actually uses any javascript. All stats are from my [githu
 - Issues
 - Commits
 - Pull Requests
+### Portfolio Page
+Displays all of my interesting projects. Will probably receive the most updates.
+- Games
+- Tools
+- Dev Utilites
+- Game Mods
 
 # Contributing
 If you'd like to clear out some of the terrible code, feel free to open a pull request!

@@ -38,6 +38,24 @@ const projects = [
         image: "Images/Github.png",
         redirect: "https://github.com/29cmb/PackageManagerPlugin"
     },
+    {
+        name: "Slimer",
+        description: "A sprig game I made in around 4 hours to receive a sprig device grant. Made for hackclub arcade 2024 and hosted on their sprig website",
+        image: "Images/Sprig.png",
+        redirect: "https://sprig.hackclub.com/gallery/Slimer"
+    },
+    {
+        name: "Arcade Discord Bot",
+        description: "A discord bot to interact with the hackclub arcade API through discord instead of through heidi the hakkun on slack. Made for hackclub arcade 2024.",
+        image: "Images/HackClubDiscordIcon.png",
+        redirect: "https://github.com/29cmb/ArcadeDiscordBot"
+    },
+    {
+        name: "Kaboom Webhook Server",
+        description: "A discord webhook proxy, except it's not a webhook at all and it's a bot sending the messages. Everything is done through an API. Great for platforms that block direct access to discord",
+        image: "Images/Discord.png",
+        redirect: "https://github.com/Funi-Dog-Games/WebhookServer"
+    }
    
 ];
 

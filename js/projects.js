@@ -3,11 +3,41 @@
 
 const projects = [
     { 
-        name: "Project", 
-        description: "This is a brief description on the project that I am currently doing. What am I doing? uhh idk bro you tell me you're the man reading this, I'm just a text box. Does this go off the screen? It might, idk man what do you want from me, I AM A TEXT BOX.", 
-        image: "Images/Placeholder.png",
-        redirect: "https://example.com"
-    }
+        name: "Kaboom Kompetition", 
+        description: "Kaboom Kompetition is a roblox game where you use your rocket launcher and timebomb to destroy the map. You earn points through the destruction, and the person with the most points at the end of th round wins. You can purchase cosmetics and unlock achievements while you're playing. Check it out it you're bored or if you're craving destruction 😈", 
+        image: "Images/IconV1.png",
+        redirect: "https://www.roblox.com/games/13146174045/Kaboom-Kompetition"
+    }, 
+    {
+        name: "Rhythm Game",
+        description: "I made a rhythm game in LOVE2D, a lua-based game design framework, that includes a fully-featured level editor and level loading. Made for hackclub aracde 2024",
+        image: "Images/LOVE2D.png",
+        redirect: "https://github.com/29cmb/Love2dRhythmGame"
+    },
+    {
+        name: "FFlag API",
+        description: "I made a Fast Flag API that allows featurs to be asynchronously toggled without requiring servers to be put into maintenance or restarted. Very useful for developers.",
+        image: "Images/Flag.png"
+    },
+    {
+        name: "Platinum Minigames",
+        description: "Platinum Minigames is a game where you play minigames in order to purchase cosmetics and other things. Play with friends or play solo! Complete the season pass or complete quests! The way you play is up to you.",
+        image: "Images/Platinum.png",
+        redirect: "https://www.roblox.com/games/6132510146/Platinum-Minigames"
+    },
+    {
+        name: "Cleaner Menu",
+        description: "Cleaner menu is a geometry dash mod which moves around the position of the menu buttons to be cleaner and less disorganized. UX design by UCrash, implementation by me. Not my best work, no, as I know basically nothing about c++.",
+        image: "Images/CleanerMenu.png",
+        redirect: "https://geode-sdk.org/mods/devcmb.cleanermenu"
+    },
+    {
+        name: "Package Manager",
+        description: "I made a package manager for roblox developers to find useful packages which are free to use and open source. It has a companion plugin which loads the actual packages, and a backend server written in nodejs. Made for hackclub arcade 2024",
+        image: "Images/Github.png",
+        redirect: "https://github.com/29cmb/PackageManagerPlugin"
+    },
+   
 ];
 
 function renderProjects() {

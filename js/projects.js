@@ -7,12 +7,42 @@ const projects = [
         description: "Kaboom Kompetition is a roblox game where you use your rocket launcher and timebomb to destroy the map. You earn points through the destruction, and the person with the most points at the end of th round wins. You can purchase cosmetics and unlock achievements while you're playing. Check it out it you're bored or if you're craving destruction 😈", 
         image: "Images/IconV1.png",
         redirect: "https://www.roblox.com/games/13146174045/Kaboom-Kompetition"
-    }, 
+    },
+    {
+        name: "Random Minigames Server Plugin",
+        description: "A minecraft plugin made for the paper API that allows you to play a variety of minigames with unique maps on a server with your friends! Made for hackclub high seas 2024.",
+        image: "https://cloud-o0al2qyg8-hack-club-bot.vercel.app/0image.png",
+        redirect: "https://github.com/Cmb-Minigames/CmbMinigamesRandom"
+    },
+    {
+        name: "ActionFlow - Github Workflow Builder",
+        description: "ActionFlow is a tool that is used for generating github workflows from visual blocks. It's a great tool for people who are new to github actions and want to learn how to use them. This was my final project for hackclub arcade, 2024.",
+        image: "https://github.com/29cmb/Github-Workflow-Builder/raw/main/client/public/assets/FullLogo.png",
+        redirect: "https://actionflow.devcmb.hackclub.app/"
+    },
+    {
+        name: "Blue Goose Platformer",
+        description: "A platformer game made in LOVE2D, with inspiration from my friend who made a similar game, called Goose Platformer, though in mine, upon pressing the 'J' key, you turn into water. Made for hackclub arcade, 2024.",
+        image: "https://raw.githubusercontent.com/29cmb/BlueGoosePlatformer/refs/heads/main/images/player.png",
+        redirect: "https://github.com/29cmb/BlueGoosePlatformer"
+    },
     {
         name: "Rhythm Game",
         description: "I made a rhythm game in LOVE2D, a lua-based game design framework, that includes a fully-featured level editor and level loading. Made for hackclub aracde 2024",
         image: "Images/LOVE2D.png",
         redirect: "https://github.com/29cmb/Love2dRhythmGame"
+    },
+    {
+        name: "Cmb Minigames Minecraft Plugin",
+        description: "A minecraft plugin that has a variety of minigames to play in a spigot server with friends! Made for hackclub low skies 2024.",
+        image: "https://cdn.modrinth.com/data/oHT86Lpi/8c59767a25e841f3103c03f3879699e959b55e1d_96.webp",
+        redirect: "https://modrinth.com/plugin/cmb-minigames"
+    },
+    {
+        name: "Progamming Wrapped",
+        description: "A VS Code extension for tracking all of the programming statistics of the last 365 days. Made for hackclub high seas 2024.",
+        image: "https://raw.githubusercontent.com/29cmb/programming-wrapped/refs/heads/master/resources/icon.png",
+        redirect: "https://marketplace.visualstudio.com/items?itemName=DevCmb.programming-wrapped"
     },
     {
         name: "FFlag API",
@@ -56,7 +86,6 @@ const projects = [
         image: "Images/Discord.png",
         redirect: "https://github.com/Funi-Dog-Games/WebhookServer"
     }
-   
 ];
 
 function renderProjects() {

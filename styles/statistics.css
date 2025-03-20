@@ -61,7 +61,7 @@ body {
     font-family: Inter;
     font-weight: 800;
     white-space: nowrap;
-  }
+}
   
 .topbar {
     position: fixed;
@@ -76,12 +76,18 @@ body {
     z-index: 1000;
 }
 
+@media (max-width: 724px) {
+    .topbar {
+        justify-content: center;
+    }
+}
+
 .topbar-button {
     background-color: transparent;
     color: white;
-    padding: 1vh 1vw;
+    padding: 10px;
     text-decoration: none;
-    font-size: 1.5vw;
+    font-size: 20px;
     cursor: pointer;
     transition: all 0.3s, color 0.3s;
 }

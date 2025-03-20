@@ -55,12 +55,18 @@ body {
     z-index: 1000;
 }
 
+@media (max-width: 724px) {
+    .topbar {
+        justify-content: center;
+    }
+}
+
 .topbar-button {
     background-color: transparent;
     color: white;
-    padding: 1vh 1vw;
+    padding: 10px;
     text-decoration: none;
-    font-size: 1.5vw;
+    font-size: 20px;
     cursor: pointer;
     transition: all 0.3s, color 0.3s;
 }
@@ -113,5 +119,69 @@ body {
     .Languages img {
         max-width: 10vw;
         max-height: 10vw;
+    }
+}
+
+#top {
+    position: absolute;
+    top: 5vh;
+    height: 20em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding-top: 30px;
+}
+
+#introduction {
+    color: white;
+    font-size: 6vw;
+    line-height: 80%;
+}
+
+@media (max-width: 671px) {
+    .Languages img {
+        max-width: 10vw;
+        max-height: 10vw;
+    }
+
+    #top {
+        position: absolute;
+        top: 5vh;
+        height: 20em;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+    #introduction {
+        text-align: center;
+        font-size: 40px;
+    }
+}
+
+
+.devcmbText {
+    font-size: 7vw;
+    background: linear-gradient(0deg, #ff0000, #ff0095);
+    -webkit-background-clip: text;
+    font-weight: bolder;
+    background-clip: text;
+    color: transparent;
+}
+
+#Icon {
+    width: calc(100px + 10vw);
+    border-radius: 40px;
+}
+
+@media (max-width: 438px) {
+    #Icon {
+        width: calc(100px + 20vw);
+        border-radius: 40px;
     }
 }

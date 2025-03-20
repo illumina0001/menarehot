@@ -2,9 +2,10 @@
 
 body {
     margin: 0;
-    overflow: hidden; 
-    background: linear-gradient(180deg, black 0%, #2D2D2D 100%);
+    background-color: #1f1f1f;
     min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 * {
@@ -18,7 +19,6 @@ body {
     width: 100vw;
     height: 100vh;
     position: relative;
-    overflow: hidden;
 }
 
 .seperator {
@@ -123,7 +123,6 @@ body {
 }
 
 #top {
-    position: absolute;
     top: 5vh;
     height: 20em;
     width: 100%;
@@ -131,7 +130,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 2em;
-    padding-top: 30px;
+    margin-top: 30px;
 }
 
 #introduction {
@@ -147,7 +146,6 @@ body {
     }
 
     #top {
-        position: absolute;
         top: 5vh;
         height: 20em;
         width: 100%;
@@ -156,6 +154,7 @@ body {
         justify-content: flex-start;
         align-items: center;
         padding-top: 30px;
+        margin-bottom: 30px;
     }
 
     #introduction {
@@ -184,4 +183,89 @@ body {
         width: calc(100px + 20vw);
         border-radius: 40px;
     }
+}
+
+#bottom {
+    top: 25em;
+    width: 100%;
+    height: calc(100% - 25em);
+}
+
+#years {
+    color: white;
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#timeText {
+    color: transparent;
+    font-weight: bolder;
+    background: linear-gradient(0deg, #ff6600, #ffee00);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+#languagesContainer {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 50px;
+    height: 90px;
+    gap: 10px;
+}
+
+#languagesContainer > p {
+    font-weight: bolder;
+}
+
+.language {
+    width: 75px;
+}
+
+@media (max-width: 1200px) {
+    #languagesContainer {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    #languagesContainer p {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        order: 1;
+    }
+
+    #languagesContainer img {
+        order: 2;
+    }
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+}
+.social-icons a {
+    text-shadow: 
+        2px 0 0 black,
+        -2px 0 0 black,
+        0 2px 0 black,
+        0 -2px 0 black,
+        1px 1px black,
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black;
+    filter: none;
+    -webkit-text-stroke: 0;
 }

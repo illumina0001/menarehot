@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 body {
     margin: 0;
-    overflow: hidden;
+    background-color: #1f1f1f;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 * {
@@ -95,4 +98,34 @@ body {
 .topbar-button:hover {
     background-color: white;
     color: black;
+}
+
+#statsText {
+    background: linear-gradient(0deg, #0077ff, #00ffff);
+    font-size: 90px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    padding-top: 60px;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (max-width: 1000px) {
+    #content {
+        gap: 30px;
+    }
+}
+
+#content > div > p {
+    font-size: 64px;
+    color: white;
+    text-align: center;
+    margin: 0;
 }

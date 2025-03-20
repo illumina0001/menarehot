@@ -9,34 +9,22 @@
 <body>
     <div class="topbar">
         <a href="/" class="topbar-button">Home</a>
-        <a href="/contributions.html" class="topbar-button">Contributions</a>
         <a href="/portfolio.html" class="topbar-button">Portfolio</a>
     </div>
-    <div class="StatsPage" style="width: 100vw; height: 100vh; position: relative; background: linear-gradient(180deg, black 0%, #2D2D2D 100%)">
-        <img class="Statisticsmask" style="width: 609px; height: 155px; left: 50%; top: 11vh; position: absolute; transform: translateX(-50%)" src="Images/StatisticsMask.png" />
-        <div class="Streak" style="width: 80vw; height: 10vh; left: 9.5vw; top: 28vh; position: absolute">
-            <div class="IHaveAGithubStreakOfDays" style="left: 0; top: 16%; position: absolute; color: white; font-size: 3.4vw; font-family: Inter; font-weight: 800; word-wrap: break-word">
-                I have a github streak of <span id="StreakText">30</span> days
+    <div class="StatsPage">
+        <p id="statsText">Statistics</p>
+        <div id="content">
+            <div class="Stars">
+                <p>I have earned a total of <span id="StarsText">30</span> stars</p>
             </div>
-        </div>
-        <div class="Stars" style="width: 80vw; height: 10vh; left: 9.5vw; top: 37vh; position: absolute">
-            <div class="IHaveEarnedATotalOfStars" style="left: 0; top: 16%; position: absolute; color: white; font-size: 3.4vw; font-family: Inter; font-weight: 800; word-wrap: break-word">
-                I have earned a total of <span id="StarsText">30</span> stars
+            <div class="Issues">
+                <p>I have opened <span id="IssuesText">10</span> issues</p>
             </div>
-        </div>
-        <div class="Issues" style="width: 80vw; height: 10vh; left: 9.5vw; top: 46vh; position: absolute">
-            <div class="IHaveOpenedIssues" style="left: 0; top: 16%; position: absolute; color: white; font-size: 3.4vw; font-family: Inter; font-weight: 800; word-wrap: break-word">
-                I have opened <span id="IssuesText">10</span> issues
+            <div class="Commits">
+                <p>I have made <span id="CommitsText">500</span> commits in the last year</p>
             </div>
-        </div>
-        <div class="Commits" style="width: 80vw; height: 10vh; left: 9.5vw; top: 55vh; position: absolute">
-            <div class="IHaveMadeCommitsInTheLastYear" style="left: 0; top: 16%; position: absolute; color: white; font-size: 3.4vw; font-family: Inter; font-weight: 800; word-wrap: break-word">
-                I have made <span id="CommitsText">500</span> commits in the last year
-            </div>
-        </div>
-        <div class="Prs" style="width: 80vw; height: 10vh; left: 9.5vw; top: 64vh; position: absolute">
-            <div class="IHaveOpenedPullRequests" style="left: 0; top: 16%; position: absolute; color: white; font-size: 3.4vw; font-family: Inter; font-weight: 800; word-wrap: break-word">
-                I have opened <span id="PRText">10</span> pull requests
+            <div class="Prs">
+                <p>I have opened <span id="PRText">10</span> pull requests</p>
             </div>
         </div>
     </div>

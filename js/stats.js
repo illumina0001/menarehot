@@ -1,55 +1,9 @@
 const username = '29cmb';
 
-setInterval(() => {
-    getStreak();
-    getStars();
-    getIssues();
-    getCommits();
-    getPrs();
-}, 30 * 1000);
-
-getStreak();
 getStars();
 getIssues();
 getCommits();
 getPrs();
-
-function getStreak() {
-    const today = new Date();
-    let currentStreak = 0;
-    let checking = true;
-
-    function checkDay(date) {
-        const dateString = date.toISOString().split('T')[0];
-        return fetch(`https://api.github.com/search/commits?q=author:${username}+committer-date:${dateString}`, {
-            headers: {
-                'Accept': 'application/vnd.github.cloak-preview'
-            }
-        })
-        .then(response => response.json())
-        .then(data => data.total_count > 0);
-    }
-
-    function checkNextDay(date) {
-        checkDay(date).then(hasContribution => {
-            if (hasContribution && checking) {
-                currentStreak++;
-                const previousDay = new Date(date);
-                previousDay.setDate(previousDay.getDate() - 1);
-                checkNextDay(previousDay);
-            } else {
-                document.getElementById("StreakText").innerHTML = currentStreak.toString()
-                console.log(`Current streak: ${currentStreak} days`);
-                checking = false;
-            }
-        }).catch(error => {
-            console.error('Error checking day:', error);
-            checking = false;
-        });
-    }
-
-    checkNextDay(today);
-}
 
 function getStars() {
     fetch(`https://api.github.com/users/${username}/repos`)

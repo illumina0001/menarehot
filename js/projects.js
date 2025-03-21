@@ -4,7 +4,7 @@
 const projects = [
     { 
         name: "Kaboom Kompetition", 
-        description: "Kaboom Kompetition is a roblox game where you use your rocket launcher and timebomb to destroy the map. You earn points through the destruction, and the person with the most points at the end of th round wins. You can purchase cosmetics and unlock achievements while you're playing. Check it out it you're bored or if you're craving destruction 😈", 
+        description: "Kaboom Kompetition is a roblox game where you use your rocket launcher and timebomb to destroy the map. You earn points through the destruction, and the person with the most points at the end of the round wins. You can purchase cosmetics and unlock achievements while you're playing. Check it out it you're bored or if you're craving destruction 😈", 
         image: "Images/IconV1.png",
         redirect: "https://www.roblox.com/games/13146174045/Kaboom-Kompetition"
     },

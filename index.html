@@ -11,8 +11,8 @@
     document.querySelectorAll('.language').forEach(img => {
         img.style.cursor = 'pointer';
         img.addEventListener('click', () => {
-            const url = img.dataset.linkie;
-            if (url) window.open(linkie, '_blank');
+            const linkie = img.dataset.linkie;
+            if (linkie) window.open(linkie, '_blank');
         });
     });
 </script>

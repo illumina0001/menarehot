@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+<script>
+    document.querySelectorAll('.language').forEach(img => {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', () => {
+            const url = img.dataset.linkie;
+            if (url) window.open(linkie, '_blank');
+        });
+    });
+</script>
+
 <body>
     <div class="topbar">
         <a href="/statistics.html" class="topbar-button">Statistics</a>
@@ -24,24 +34,24 @@
             <p id="years">• Programmer for <span id="timeText">5 years</span></p>
             <div id="languagesContainer">
                 <p id="languages">• Many languages</p>
-                <img class="language" src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/89a95757aed9a585f6f5256baa96f989b89a061c/icons/file_type_css.svg" />
-                <img class="language" src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/89a95757aed9a585f6f5256baa96f989b89a061c/icons/file_type_html.svg" />
-                <img class="language" src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/89a95757aed9a585f6f5256baa96f989b89a061c/icons/file_type_js_official.svg" />
-                <img class="language" src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/89a95757aed9a585f6f5256baa96f989b89a061c/icons/file_type_node.svg" />
-                <img class="language" src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/89a95757aed9a585f6f5256baa96f989b89a061c/icons/file_type_csharp2.svg" />
-                <img class="language" src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/89a95757aed9a585f6f5256baa96f989b89a061c/icons/file_type_php.svg" />
-                <img class="language" src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/89a95757aed9a585f6f5256baa96f989b89a061c/icons/file_type_lua.svg" />
-                <img class="language" src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/89a95757aed9a585f6f5256baa96f989b89a061c/icons/file_type_luau.svg" />
-                <img class="language" src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/89a95757aed9a585f6f5256baa96f989b89a061c/icons/file_type_java.svg" />
+                <img class="language" src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/89a95757aed9a585f6f5256baa96f989b89a061c/icons/file_type_css.svg" data-linkie="https://developer.mozilla.org/en-US/docs/Web/CSS" />
+                <img class="language" src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/89a95757aed9a585f6f5256baa96f989b89a061c/icons/file_type_html.svg" data-linkie="https://developer.mozilla.org/en-US/docs/Web/HTML" />
+                <img class="language" src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/89a95757aed9a585f6f5256baa96f989b89a061c/icons/file_type_js_official.svg" data-linkie="https://developer.mozilla.org/en-US/docs/Web/JavaScript" />
+                <img class="language" src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/89a95757aed9a585f6f5256baa96f989b89a061c/icons/file_type_node.svg" data-linkie="https://nodejs.org/" />
+                <img class="language" src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/89a95757aed9a585f6f5256baa96f989b89a061c/icons/file_type_csharp2.svg" data-linkie="https://learn.microsoft.com/en-us/dotnet/csharp/" />
+                <img class="language" src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/89a95757aed9a585f6f5256baa96f989b89a061c/icons/file_type_php.svg" data-linkie="https://www.php.net/" />
+                <img class="language" src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/89a95757aed9a585f6f5256baa96f989b89a061c/icons/file_type_lua.svg" data-linkie="https://www.lua.org/" />
+                <img class="language" src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/89a95757aed9a585f6f5256baa96f989b89a061c/icons/file_type_luau.svg" data-linkie="https://luau-lang.org/" />
+                <img class="language" src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/89a95757aed9a585f6f5256baa96f989b89a061c/icons/file_type_java.svg" data-linkie="https://www.java.com/" />
             </div>
             <div id="languagesContainer">
                 <p id="languages">• Many frameworks</p>
-                <img class="language" src="./Images/LOVE2D.png">
-                <img class="language" src="./Images/Sprig.png">
-                <img class="language" src="https://upload.wikimedia.org/wikipedia/commons/4/42/Roblox_Studio_Logo_2022.png">
-                <img class="language" src="https://avatars.githubusercontent.com/u/88206422?s=200&v=4" />
-                <img class="language" src="https://avatars.githubusercontent.com/u/7608950?s=200&v=4" />
-                <img class="language" src="https://static.spigotmc.org/img/spigot.png" />
+                <img class="language" src="./Images/LOVE2D.png" data-linkie="https://love2d.org/" />
+                <img class="language" src="./Images/Sprig.png" data-linkie="https://github.com/hackclub/sprig" />
+                <img class="language" src="https://upload.wikimedia.org/wikipedia/commons/4/42/Roblox_Studio_Logo_2022.png" data-linkie="https://www.roblox.com/create" />
+                <img class="language" src="https://avatars.githubusercontent.com/u/88206422?s=200&v=4" data-linkie="https://godotengine.org/" />
+                <img class="language" src="https://avatars.githubusercontent.com/u/7608950?s=200&v=4" data-linkie="https://unity.com/" />
+                <img class="language" src="https://static.spigotmc.org/img/spigot.png" data-linkie="https://www.spigotmc.org/" />
             </div>
         </div>
 

@@ -7,15 +7,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<script>
-    document.querySelectorAll('.language').forEach(img => {
-        img.style.cursor = 'pointer';
-        img.addEventListener('click', () => {
-            const linkie = img.dataset.linkie;
-            if (linkie) window.open(linkie, '_blank');
-        });
-    });
-</script>
+
 
 <body>
     <div class="topbar">
@@ -61,5 +53,14 @@
             <a href="https://discord.gg/8b8eAHfhuT" target="_blank" id="discord"><i class="fab fa-discord"></i></a>
         </div>
     </div>
+<script>
+    document.querySelectorAll('.language').forEach(img => {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', () => {
+            const linkie = img.dataset.linkie;
+            if (linkie) window.open(linkie, '_blank');
+        });
+    });
+</script>
 </body>
 </html>
